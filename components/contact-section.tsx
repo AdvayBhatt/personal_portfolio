@@ -23,7 +23,7 @@ const ContactSection = () => {
     const handleSubmit = async (e: React.FormEvent) => {
       e.preventDefault()
       try {
-        const res = await fetch("/api/contact", {
+        const res = await fetch("/api/send-email", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(formData),

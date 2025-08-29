@@ -1,29 +1,28 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+export async function POST(req: NextRequest) {
+  const resendApiKey = process.env.RESEND_API_KEY;
+  if (!resendApiKey) {
+    console.error("RESEND_API_KEY not found");
+    return NextResponse.json({ status: "error", error: "Missing API key" });
+  }
 
-export async function POST(req: Request) {
+  const resend = new Resend(resendApiKey);
+
+  const { name, email, message, subject } = await req.json();
+
   try {
-    const body = await req.json();
-    const { name, email, message } = body;
-
     await resend.emails.send({
-      from: "Your Name <onboarding@resend.dev>", // use your verified email later
-      to: "your-email@example.com", // where YOU want to receive messages
-      subject: `Portfolio Contact from ${name}`,
-      html: `
-        <h2>New Message from Portfolio</h2>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong></p>
-        <p>${message}</p>
-      `,
+      from: "Hello <hello@resend.io>",
+      to: "advayabhattacharya@gmail.com",
+      subject,
+      text: `${name} <${email}> says: ${message}`,
     });
 
-    return NextResponse.json({ status: "ok" });
-  } catch (error) {
-    console.error(error);
-    return NextResponse.json({ error }, { status: 500 });
+    return NextResponse.json({ status: "success" });
+  } catch (err) {
+    console.error(err);
+    return NextResponse.json({ status: "error", error: err });
   }
 }
