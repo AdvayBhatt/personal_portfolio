@@ -28,7 +28,7 @@ const ProjectsSection = () => {
       github: "#",
       demo: "#",
       featured: true,
-      image: "/ai-financial-platform-dashboard-with-charts-and-gr.png",
+      image: "/coinvo_ai.png",
     },
     {
       icon: BarChart3,
@@ -46,7 +46,7 @@ const ProjectsSection = () => {
       github: "#",
       demo: "#",
       featured: false,
-      image: "/nlp-sentiment-analysis-visualization-with-bert-mod.png",
+      image: "/student_engineering_council.png",
     },
     {
       icon: Car,
@@ -64,7 +64,7 @@ const ProjectsSection = () => {
       github: "#",
       demo: "#",
       featured: false,
-      image: "/electric-vehicle-data-visualization-with-predictio.png",
+      image: "/gm_project_sample.png",
     },
   ]
 
