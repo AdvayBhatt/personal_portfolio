@@ -32,7 +32,7 @@ const AboutSection = () => {
         >
           <div className="relative rounded-lg overflow-hidden">
             <img
-              src="/texas-am-campus-academic.png"
+              src="/texas_am.png"
               alt="Texas A&M University Campus"
               className="w-full h-64 object-cover"
             />
@@ -45,7 +45,7 @@ const AboutSection = () => {
           </div>
 
           <div className="relative rounded-lg overflow-hidden">
-            <img src="/data-science-workspace.png" alt="Data Science Workspace" className="w-full h-64 object-cover" />
+            <img src="/data_science_generic.png" alt="Data Science Workspace" className="w-full h-64 object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
               <div className="p-6 text-white">
                 <h3 className="text-xl font-semibold mb-2">Hands-On Learning</h3>
@@ -118,7 +118,7 @@ const AboutSection = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="relative rounded-lg overflow-hidden group">
               <img
-                src="/chess-strategy-board.png"
+                src="/chess_strategy.png"
                 alt="Chess Strategy"
                 className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -128,7 +128,7 @@ const AboutSection = () => {
             </div>
             <div className="relative rounded-lg overflow-hidden group">
               <img
-                src="/swimming-pool-lanes.png"
+                src="/swimming_lanes.png"
                 alt="Swimming"
                 className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -138,7 +138,7 @@ const AboutSection = () => {
             </div>
             <div className="relative rounded-lg overflow-hidden group">
               <img
-                src="/pickleball-court-action.png"
+                src="/pickleball.png"
                 alt="Pickleball"
                 className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
               />
@@ -148,7 +148,7 @@ const AboutSection = () => {
             </div>
             <div className="relative rounded-lg overflow-hidden group">
               <img
-                src="/art-creative-workspace.png"
+                src="/paint_brush.png"
                 alt="Art & Creativity"
                 className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
               />
