@@ -72,9 +72,11 @@ const HeroSection = () => {
           >
             View Projects
           </Button>
-          <Button size="lg" variant="outline" onClick={() => scrollToSection("contact")}>
-            <Download className="mr-2 h-4 w-4" />
-            Resume
+          <Button size="lg" variant="outline" asChild>
+            <a href="/2025_Resume_Advay_Bhattacharya.pdf" download>
+              <Download className="mr-2 h-4 w-4" />
+              Resume
+            </a>
           </Button>
           <Button size="lg" variant="outline" onClick={() => scrollToSection("contact")}>
             Get In Touch

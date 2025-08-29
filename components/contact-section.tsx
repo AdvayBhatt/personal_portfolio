@@ -18,11 +18,28 @@ const ContactSection = () => {
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+
     // Handle form submission here
-    console.log("Form submitted:", formData)
-  }
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault()
+      try {
+        const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        })
+
+        if (res.ok) {
+          alert("✅ Message sent successfully!")
+          setFormData({ name: "", email: "", subject: "", message: "" })
+        } else {
+          alert("❌ Failed to send message. Please try again.")
+        }
+      } catch (error) {
+        console.error(error)
+        alert("⚠️ An error occurred.")
+      }
+    }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
