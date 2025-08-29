@@ -23,7 +23,7 @@ const HeroSection = () => {
         >
           <div className="w-48 h-48 mx-auto mb-8 rounded-full overflow-hidden ring-4 ring-primary/20">
             <img
-              src="/professional-headshot-advay.png"
+              src="/advay_headshot.jpg"
               alt="Advay Bhattacharya"
               className="w-full h-full object-cover"
             />
