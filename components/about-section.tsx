@@ -17,9 +17,10 @@ const AboutSection = () => {
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">About Me</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            I'm a passionate Statistics student at Texas A&M University with a deep fascination for the mathematical
-            foundations that power data science and machine learning. My academic journey combines rigorous statistical
-            theory with practical applications in computer science and economics.
+            I’m a Statistics student at Texas A&M with a fascination for the math and reasoning that drive data science and machine learning.
+             What excites me most is applying those tools in unexpected places. 
+             From analyzing healthcare revenue cycles to building game-based learning tools, even tackling challenges in construction science,
+             each project has pushed me to see data from a new perspective.
           </p>
         </motion.div>
 
@@ -170,12 +171,11 @@ const AboutSection = () => {
             <CardContent className="p-8">
               <h3 className="text-2xl font-semibold mb-4">My Journey</h3>
               <p className="text-muted-foreground text-pretty leading-relaxed">
-                My passion for data science stems from its unique blend of mathematical rigor and real-world impact.
-                Through my coursework in Statistics, Computer Science, and Economics, I've developed a comprehensive
-                understanding of how data-driven insights can solve complex problems. My experience with the Mock Trial
-                Team has honed my analytical thinking and communication skills, which I apply to presenting technical
-                findings in accessible ways. I'm actively seeking AI-focused internship opportunities where I can
-                contribute to cutting-edge projects while continuing to learn and grow in this rapidly evolving field.
+                My journey with data began in politics, where I used shapefiles and TIGER/Line data to help campaigns identify voters overlooked by traditional outreach tools and people not registered. 
+                That experience showed me how data can reveal hidden patterns and give voice to communities often missed. 
+                At Texas A&M, I built on that interest through educational research, digging into the mathematical foundations of machine learning with regression and structural equation modeling.
+                I then applied those methods in construction science, where I worked on k-nearest neighbors models and solved practical data challenges. Most recently, at Optum (UHG), I connected theory with business impact by analyzing payer mix and cash flows, showing how data insights translate into ROI.
+                Across politics, education, construction, and healthcare, my focus has been consistent: using data to uncover insights that matter and applying them where they can make a difference.
               </p>
             </CardContent>
           </Card>

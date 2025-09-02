@@ -45,7 +45,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl sm:text-2xl text-muted-foreground mb-8 text-balance"
         >
-          Aspiring Data Scientist & Machine Learning Enthusiast
+          Aspiring Data Scientist
         </motion.p>
 
         <motion.p
@@ -54,9 +54,8 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto text-pretty leading-relaxed"
         >
-          Junior Statistics major at Texas A&M University, passionate about the deep mathematical underpinnings of data
-          science and machine learning. Interested in AI-focused internships. Outside work: art, chess, swimming, and
-          pickleball.
+          Junior Statistics major at Texas A&M University, passionate about the mathematical underpinnings of data
+          science and machine learning. Interested in AI-focused and Machine Learning roles. Outside work, I enjoy drawing, chess, swimming, pickleball, and Thai food.
         </motion.p>
 
         <motion.div
